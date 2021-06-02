@@ -62,5 +62,48 @@ img {
 
   .logo {
     width: 90px; } }
+.hero {
+  padding-top: 40px;
+  background: #F5F5F5;
+  padding-bottom: 40px; }
+
+.hero-section {
+  display: flex; }
+
+.hero-text {
+  flex-basis: 45%;
+  margin-right: 120px;
+  margin-top: 20px; }
+  .hero-text__title {
+    font-size: 41px; }
+  .hero-text__subtitle {
+    font-size: 20px;
+    line-height: 65px;
+    font-weight: bold;
+    margin-bottom: -15px; }
+  .hero-text .hero-list {
+    margin-top: 35px; }
+    .hero-text .hero-list__el {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-top: 20px; }
+    .hero-text .hero-list__text {
+      display: flex;
+      font-size: 14px;
+      line-height: 24px;
+      max-width: 250px; }
+    .hero-text .hero-list__img {
+      max-width: 100%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      flex-basis: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      border: 2px solid #ffd200;
+      border-radius: 50%;
+      padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
