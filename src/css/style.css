@@ -94,8 +94,6 @@ img {
       line-height: 24px;
       max-width: 250px; }
     .hero-text .hero-list__img {
-      max-width: 100%;
-      width: 20px;
       height: 20px;
       display: flex;
       flex-basis: 20px;
@@ -104,6 +102,26 @@ img {
       margin-right: 30px;
       border: 2px solid #ffd200;
       border-radius: 50%;
-      padding: 10px; }
+      padding: 10px;
+      min-width: 20px;
+      min-height: 20px; }
+
+@media (max-width: 1200px) {
+  .hero-text__title {
+    font-size: 25px; }
+  .hero-text__subtitle {
+    font-size: 15px;
+    line-height: 20px; }
+  .hero-text {
+    margin-right: 80px; } }
+@media (max-width: 768px) {
+  .hero-section {
+    display: block;
+    margin: auto; }
+  .hero-text {
+    margin-right: 0px; }
+
+  .hero-text .hero-list__el {
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

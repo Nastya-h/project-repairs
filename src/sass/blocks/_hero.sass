@@ -33,8 +33,6 @@
       line-height: 24px
       max-width: 250px
     &__img
-      max-width: 100%
-      width: 20px
       height: 20px
       display: flex
       flex-basis: 20px
@@ -44,7 +42,27 @@
       border: 2px solid $main-color
       border-radius: 50%
       padding: 10px
+      min-width: 20px
+      min-height: 20px
+@media (max-width: 1200px)
+  .hero
+    &-text__title
+      font-size: 25px
+    &-text__subtitle
+      font-size: 15px
+      line-height: 20px
+    &-text
+      margin-right: 80px
 
+@media (max-width: 768px)
+  .hero
+    &-section
+      display: block
+      margin: auto
+    &-text
+      margin-right: 0px
+  .hero-text .hero-list__el
+    margin-top: 10px
 
 
 
