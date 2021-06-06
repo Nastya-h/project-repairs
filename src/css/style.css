@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300; }
+
 img {
   max-width: 100%; }
 
@@ -44,7 +60,8 @@ img {
   color: #333333;
   text-align: right;
   font-size: 20px;
-  font-weight: bold;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   margin-top: 5px; }
 
 .adress {
@@ -67,22 +84,32 @@ img {
   background: #F5F5F5;
   padding-bottom: 40px; }
 
+.hero-img {
+  display: flex;
+  flex-basis: 55%; }
+
 .hero-section {
   display: flex; }
 
 .hero-text {
-  flex-basis: 45%;
-  margin-right: 120px;
+  flex-basis: 54%;
+  margin-right: 109px;
   margin-top: 20px; }
   .hero-text__title {
-    font-size: 41px; }
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    letter-spacing: 2px;
+    line-height: 45px; }
   .hero-text__subtitle {
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
     font-size: 20px;
-    line-height: 65px;
-    font-weight: bold;
-    margin-bottom: -15px; }
+    line-height: 55px; }
   .hero-text .hero-list {
-    margin-top: 35px; }
+    margin-top: 35px;
+    margin-left: 0px; }
     .hero-text .hero-list__el {
       list-style-type: none;
       display: flex;
@@ -90,7 +117,7 @@ img {
       margin-top: 20px; }
     .hero-text .hero-list__text {
       display: flex;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px;
       max-width: 250px; }
     .hero-text .hero-list__img {
