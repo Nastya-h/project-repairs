@@ -10,6 +10,9 @@
   src: url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo Sans Cyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300; }
@@ -33,6 +36,10 @@ img {
   background-color: #ffd200;
   padding: 18px 30px;
   border-radius: 10px; }
+
+.button:hover {
+  cursor: pointer;
+  background-color: #ffdb33; }
 
 * {
   margin: 0;
@@ -121,21 +128,19 @@ img {
       line-height: 24px;
       max-width: 250px; }
     .hero-text .hero-list__img {
-      height: 20px;
+      height: 40px;
+      width: 40px;
       display: flex;
-      flex-basis: 20px;
       justify-content: center;
       align-items: center;
       margin-right: 30px;
       border: 2px solid #ffd200;
-      border-radius: 50%;
-      padding: 10px;
-      min-width: 20px;
-      min-height: 20px; }
+      border-radius: 50%; }
 
 @media (max-width: 1200px) {
   .hero-text__title {
-    font-size: 25px; }
+    font-size: 25px;
+    line-height: 27px; }
   .hero-text__subtitle {
     font-size: 15px;
     line-height: 20px; }
@@ -147,8 +152,108 @@ img {
     margin: auto; }
   .hero-text {
     margin-right: 0px; }
+  .hero-text__title {
+    font-size: 25px;
+    line-height: 27px; }
+  .hero-text__subtitle {
+    font-size: 15px;
+    line-height: 20px; }
 
   .hero-text .hero-list__el {
     margin-top: 10px; } }
+.offer {
+  background-image: url("../img/offer-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+  padding: 70px 0;
+  top: 0;
+  right: 0; }
+  .offer:before {
+    content: " ";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white; }
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative; }
+
+.offer_title {
+  font-size: 22px;
+  margin-bottom: 24px;
+  max-width: 380px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  line-height: 30px; }
+
+.offer_subtitle {
+  font-size: 14px;
+  margin-bottom: 30px;
+  max-width: 250px; }
+
+.offer_input {
+  margin-bottom: 30px;
+  width: 240px;
+  display: inline-block;
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 0 15px; }
+  .offer_input:first-child {
+    margin-right: 8px; }
+
+.offer_button {
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700; }
+
+.offer_text {
+  display: flex;
+  font-size: 13px;
+  line-height: 20px; }
+
+.offer_tell-us {
+  width: 45%;
+  margin-right: 10%; }
+
+.offer_text-block {
+  width: 45%; }
+
+.offer_tell {
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  color: #333333; }
+
+@media (max-width: 1200px) {
+  .offer_input {
+    width: 100%;
+    margin-bottom: 18px; }
+
+  .offer_button {
+    font-size: 13px; }
+
+  .offer-block {
+    padding-right: 66px; }
+
+  .offer_text {
+    font-size: 11px; }
+
+  .offer {
+    background-size: cover; } }
+@media (max-width: 768px) {
+  .offer {
+    background: white; }
+
+  .offer-block {
+    width: 100%;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
