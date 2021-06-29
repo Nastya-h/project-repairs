@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,8 +23,8 @@
 
                     <a href="tel:+7 (495) 42-251-31 " class="nav-tel">+7 (495) 42-251-31 </a>
                 </div>
-                    <button class="button nav-but">Перезвоните мне</button>
-                </div>
+                    <button class="button nav-but" id="button">Перезвоните мне</button>
+
             </div>
 
         </div>
@@ -81,6 +82,68 @@
         </div>
     </div>
 </div>
+<div class="up">
+    <div class="container">
+        <button id="up" class="up-btn"><img class="img-up" src="img/up.png" alt="up"></button>
+    </div>
+</div>
 
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog_close" id="close">&times;</button>
+        <h4 class="modal-dialog_title">Мы Вам перезвоним!</h4>
+    </div>
+</div>
+<div class="portfolio">
+    <div class="container">
+        <h2 class="porfolio_title">Работая с 2007 года,мы сделали более 500 ремонтов в квартирах и домах
+        </h2>
+        <div class="slider">
+            <div class="slider_item"><img class="slider_image" src="img/image-1.jpg" alt="Фото"></div>
+            <div class="slider_item"><img class="slider_image" src="img/image-2.jpg" alt="Фото"></div>
+            <div class="slider_item"><img class="slider_image" src="img/image-3.jpg" alt="Фото"></div>
+            <div class="slider_item"><img class="slider_image" src="img/image-1.jpg" alt="Фото"></div>
+            <div class="slider_item"><img class="slider_image" src="img/image-2.jpg" alt="Фото"></div>
+            <div class="slider_item"><img class="slider_image" src="img/image-3.jpg" alt="Фото"></div>
+        </div>
+        <div class="arrows_portfolio">
+            <div class="arrow-left"><img src="img/left-arrow.png" alt="Влево"></div>
+            <div class="arrow-right"><img src="img/right-arrow.png" alt="Вправо"></div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="js/modal.js"> </script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.slider').slick({
+       slidesToShow: 3,
+       slidesToScroll: 1,
+        prevArrow: $('.arrow-left'),
+        nextArrow: $('.arrow-right'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+
+    ]
+});
+});
+</script>
 </body>
 </html>

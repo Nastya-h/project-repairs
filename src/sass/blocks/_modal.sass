@@ -1,0 +1,23 @@
+.modal
+  position: fixed
+  top: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background: rgba(#000, 0.5)
+  display: none
+  &_active
+    display: flex
+
+  &-dialog
+    background: $modal
+    max-width: 450px
+    width: 90%
+    min-width: 250px
+    margin: auto
+    padding: 50px
+    position: relative
+    &_close
+      top: 0
+      right: 0
+      position: absolute
